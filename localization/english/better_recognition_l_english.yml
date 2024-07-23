@@ -1,0 +1,7 @@
+﻿l_english:
+  better_recognition_earning_recognition_progress_gdp_tt: "[Concept('concept_gdp','$concept_gdp_short$')] over @money!100 million"
+  better_recognition_earning_recognition_progress_prestige_tt: "[concept_prestige] in top 10"
+  better_recognition_earning_recognition_progress_sol_tt: "[concept_sol] in top 20"
+
+  better_recognition_tt_delta_breakdown: "[Country.MakeScope.GetScriptValueDesc('better_recognition_sv_recognition_progress_delta')]"
+  better_recognition_tt_format_base: "• #indent_newline:3 $VALUE|+=0$ $KEY$#!"

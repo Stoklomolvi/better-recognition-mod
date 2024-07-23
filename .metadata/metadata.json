@@ -1,0 +1,12 @@
+{
+  "name": "Better Recognition Mechanics",
+  "id": "stoklomolvi.victoria3.betterrecognition",
+  "version": "1.0",
+  "supported_game_version": "1.7.*",
+  "short_description": "Adjusts the \"Earning Recognition\" journal to be clearer and less arbitrary to achieve.",
+  "tags": ["Events", "Gameplay", "Historical", "Journal Entries"],
+  "relationships": [],
+  "game_custom_data": {
+    "multiplayer_synchronized": true
+  }
+}

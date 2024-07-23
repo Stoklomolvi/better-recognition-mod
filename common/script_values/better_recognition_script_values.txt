@@ -1,0 +1,149 @@
+﻿better_recognition_sv_recognition_progress_delta = {
+	value = 0
+	if = {
+		limit = {
+			# Your GDP per Capita is relatively high
+			gdp_per_capita_ranking <= 20
+		}
+		add = {
+			desc = earning_recognition_progress_gdpc_tt
+			format = better_recognition_tt_format_base
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			# Your GDP is high (over 100 million)
+			GDP >= 100000000
+		}
+		add = {
+			desc = better_recognition_earning_recognition_progress_gdp_tt
+			format = better_recognition_tt_format_base
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			# Your Standard of Living is relatively high
+			sol_ranking <= 20
+		}
+		add = {
+			desc = better_recognition_earning_recognition_progress_sol_tt
+			format = better_recognition_tt_format_base
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			# Your prestige is very high
+			global_country_ranking <= 10
+		}
+		add = {
+			desc = better_recognition_earning_recognition_progress_prestige_tt
+			format = better_recognition_tt_format_base
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			# Country has voting rights
+			country_has_voting_franchise = yes
+		}
+		add = {
+			desc = earning_recognition_progress_voting_tt
+			format = better_recognition_tt_format_base
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			# Literacy rating is high-isch
+			literacy_rate >= 0.4
+		}
+		add = {
+			desc = earning_recognition_literacy_tt
+			format = better_recognition_tt_format_base
+			value = 1
+		}
+	}
+	# Deplete Conditions
+	if = {
+		limit = {
+			# Slavery is legal
+			NOT = {
+				has_law = law_type:law_slavery_banned
+			}
+		}
+		subtract = {
+			desc = earning_recognition_slavery_tt
+			format = better_recognition_tt_format_base
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			# Serfdom is legal
+			has_law = law_type:law_serfdom
+		}
+		subtract = {
+			desc = earning_recognition_serfdom_tt
+			format = better_recognition_tt_format_base
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			# Traditional economic system
+			has_law = law_type:law_traditionalism
+		}
+		subtract = {
+			desc = earning_recognition_traditionalism_tt
+			format = better_recognition_tt_format_base
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			# 'Draconic' law
+			has_law = law_type:law_outlawed_dissent
+		}
+		subtract = {
+			desc = earning_recognition_outlawed_dissent_tt
+			format = better_recognition_tt_format_base
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			# Literacy rating is low
+			literacy_rate <= 0.2
+		}
+		subtract = {
+			desc = earning_recognition_low_literacy_tt
+			format = better_recognition_tt_format_base
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			# Your GDP per Capita is relatively low
+			gdp_per_capita_ranking >= 50
+		}
+		subtract = {
+			desc = earning_recognition_low_gdpc_tt
+			format = better_recognition_tt_format_base
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			# Your Standard of Living is relatively low
+			sol_ranking >= 50
+		}
+		subtract = {
+			desc = earning_recognition_low_sol_tt
+			format = better_recognition_tt_format_base
+			value = 1
+		}
+	}
+}
