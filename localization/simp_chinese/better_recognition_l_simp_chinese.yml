@@ -1,0 +1,7 @@
+﻿l_simp_chinese:
+  better_recognition_earning_recognition_progress_gdp_tt: "[Concept('concept_gdp','$concept_gdp_short$')] 高于 @money!100 million"
+  better_recognition_earning_recognition_progress_prestige_tt: "[concept_prestige] 大于前10名"
+  better_recognition_earning_recognition_progress_sol_tt: "[concept_sol] 大于前20名"
+
+  better_recognition_tt_delta_breakdown: "[Country.MakeScope.GetScriptValueDesc('better_recognition_sv_recognition_progress_delta')]"
+  better_recognition_tt_format_base: "• #indent_newline:3 $VALUE|+=0$ $KEY$#!"
