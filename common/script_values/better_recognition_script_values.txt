@@ -36,7 +36,7 @@
 	if = {
 		limit = {
 			# Your prestige is very high
-			global_country_ranking <= 10
+			prestige_ranking <= 10
 		}
 		add = {
 			desc = better_recognition_earning_recognition_progress_prestige_tt
